@@ -1,0 +1,19 @@
+body {
+  background-image: radial-gradient(circle at top left, #fbc2eb, #a6c1ee);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #6a6b6b;
+}
+
+.rectangle {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(250, 246, 250);
+  border-radius: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  text-align: center;
+}

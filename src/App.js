@@ -6,9 +6,9 @@ import Form from "./Form";
 class App extends React.Component {
   state = {
     todos: [
-      { id: 1, todo: "Documentation React" },
-      { id: 2, todo: "tuto React" },
-      { id: 3, todo: "mettre à jour GitHub" }
+      { id: 1, todo: "Documentation React " },
+      { id: 2, todo: "Tuto React " },
+      { id: 3, todo: "Projet " }
     ]
   };
   // SUPPRIMER UNE TACHE
@@ -22,7 +22,7 @@ class App extends React.Component {
 
   handleAdd = todo => {
     const todos = [...this.state.todos];
-    todos.push({ todo });
+    todos.push(todo);
     this.setState({ todos });
   };
 

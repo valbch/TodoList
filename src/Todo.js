@@ -7,23 +7,17 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 const Todo = ({ details, onDelete }) => {
   return (
     <div>
-      <li>
+      <li className="list">
         {details.todo}
-        <FontAwesomeIcon
-          icon={faTrashAlt}
-          color="orange"
-          onClick={() => {
-            onDelete(details.id);
-          }}
-        />
-
-        {/* <button
-          onClick={() => {
-            onDelete(details.id);
-          }}
-        >
-          x
-        </button> */}
+        <span className="close">
+          <FontAwesomeIcon
+            icon={faTrashAlt}
+            color="orange"
+            onClick={() => {
+              onDelete(details.id);
+            }}
+          />
+        </span>
       </li>
     </div>
   );

@@ -22,21 +22,16 @@ class Form extends React.Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <div className="input">
-            <input
-              value={this.state.newTodo}
-              onChange={this.handleChange}
-              type="text"
-              placeholder="Ajouter une tache"
-            />
-          </div>
-          <div className="button">
-            <button className="border-button"> +</button>
-          </div>
-        </form>
-      </div>
+      <form onSubmit={this.handleSubmit} className="form">
+        <input
+          className="input"
+          value={this.state.newTodo}
+          onChange={this.handleChange}
+          type="text"
+          placeholder="Ajouter une tache"
+        />
+        <button className="border-button"> +</button>
+      </form>
     );
   }
 }

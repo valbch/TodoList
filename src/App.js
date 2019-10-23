@@ -2,6 +2,9 @@ import React from "react";
 import "./App.css";
 import Todo from "./Todo";
 import Form from "./Form";
+// adapter la taille du container quand il y a bcp de to
+// Ajouter checked ( avec la coche)
+// Enregistrer - stocker la base de donnée de la todo + checked = dans un objet - boucle dans l'objet
 
 class App extends React.Component {
   state = {
@@ -27,17 +30,18 @@ class App extends React.Component {
   };
 
   render() {
-    const title = "To Do List";
+    const title = "Ma To Do List";
 
     return (
-      <div className="rectangle">
+      <div className="container">
         <h1 className="title">{title}</h1>
 
-        <ul>
+        <ul className="todos">
           {this.state.todos.map((item, index) => (
             <Todo key={index} details={item} onDelete={this.handleDelete} />
           ))}
         </ul>
+
         <Form onTodoAdd={this.handleAdd} />
       </div>
     );

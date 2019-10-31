@@ -32,6 +32,9 @@ body {
 .todos {
   padding-inline-start: 0px;
 }
+.checkbox {
+  margin-right: 1rem;
+}
 
 .list:hover {
   background: #ddd;
@@ -39,18 +42,20 @@ body {
 }
 
 .list {
-  text-decoration: line-through;
+  position: relative;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
 
-  display: flex;
-  justify-content: space-between;
   list-style: none;
-  padding: 5px;
-  /* box-sizing: border-box;
-  width: 100%; */
 }
 
 .close:hover {
   filter: hue-rotate(210deg);
+}
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 .form {

@@ -27,6 +27,7 @@ body {
   border-radius: 10px;
   opacity: 0.8;
   padding: 20px;
+  text-shadow: 1px 1px 2px #999;
 }
 
 .todos {
@@ -92,4 +93,7 @@ body {
   /* border: rgb(250, 246, 250); */
   box-shadow: 0px 0px 0px 5px orange;
   font-weight: bold;
+}
+.checkbox:checked + label {
+  text-decoration: line-through;
 }

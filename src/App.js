@@ -4,9 +4,7 @@ import Todo from "./Todo";
 import Form from "./Form";
 // adapter la taille du container quand il y a bcp de todo
 // responsive
-// Ajouter checked ( avec la coche)
-// rayer si checked est true = text-decoration: line-through
-// mettre une ombre ou un effet sur h1
+
 // Enregistrer - stocker la base de donnée de la todo + checked = dans un objet - boucle dans l'objet
 
 class App extends React.Component {

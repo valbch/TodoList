@@ -4,11 +4,13 @@
 
 // // faire cmd + click pour acceder à la librairie
 
-// class Todo extends React.Component {
+// class TodoClass extends React.Component {
 //   state = {
 //     textLineThrough: false
 //   };
-
+//   handleClick() {
+//     alert("hello");
+//   }
 //   render() {
 //     return (
 //       <div>
@@ -39,4 +41,4 @@
 //   }
 // }
 
-// export default Todo;
+// export default TodoClass;

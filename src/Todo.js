@@ -13,12 +13,10 @@ const Todo = ({ details, onDelete }) => {
             className="checkbox"
             type="checkbox"
             Checked={false}
-            id="myCheck"
-            onclick="myfonction()"
+            name="packersOff"
           ></input>
         }
-
-        {details.todo}
+        <label for="packersOff">{details.todo}</label>
 
         <span className="close">
           <FontAwesomeIcon
